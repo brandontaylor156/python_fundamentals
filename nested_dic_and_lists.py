@@ -34,8 +34,8 @@ students = [
 
 def iterateDictionary(some_list):
     count = 0
-    for i in range(len(some_list)):
-        for key, value in some_list[i].items():
+    for student in students:
+        for key, value in student.items():
             print(f"{key} - {value}", end="")
             if count % 2 == 0:
                 print(", ", end="")
@@ -50,8 +50,8 @@ iterateDictionary(students)
 # for each dictionary. 
 
 def iterateDictionary2(key_name, some_list):
-    for i in range(len(some_list)):
-        print(some_list[i][key_name])
+    for some_element in some_list:
+        print(some_element[key_name])
 
 iterateDictionary2('last_name', students)
 
